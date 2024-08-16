@@ -1,0 +1,9 @@
+.startBox {
+	color: #FFF
+	display: inline-block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	}
