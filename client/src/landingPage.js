@@ -1,4 +1,4 @@
-import StartBox from './startButton.js'
+import StartButton from './StartButton.js'
 import Title from './Title.js'
 
 const LandingPage = () => {
@@ -7,7 +7,7 @@ return (
         /* backgroundColor: '#F7E7CB' */
         }}>
         <Title />
-        <StartBox />
+        <StartButton />
 	</div>
 	)
 }

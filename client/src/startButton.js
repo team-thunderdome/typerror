@@ -1,12 +1,13 @@
 import './startButton.css'
 
-const StartBox = ({onClick}) => {
+// THIS SHOULD PROBABLY DO SOMETHING > ROUTE GAMINGPAGE
+const StartButton = ({onClick}) => {
 	return (
 	<div>
-	<button className="startBox" onClick={onClick}>
+	<button className="startButton" onClick={onClick}>
 	   &gt; start...
 	</button></div>
 	)
 }
 
-export default StartBox
+export default StartButton
