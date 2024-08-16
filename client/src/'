@@ -1,0 +1,13 @@
+import Title from './title'
+
+function App() {
+  return (
+    <div style={{
+	backgroundColor: '#F7E7CB'
+	}}>
+	<Title />
+    </div>
+  )
+}
+
+export default App;
