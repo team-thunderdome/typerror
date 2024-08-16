@@ -2,11 +2,22 @@ import express from "express";
 import { PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
 import { Score } from "./models/scoreModel.js";
+import cors from "cors";
 
 const app = express();
 
 // Middleware to parse JSON data
 app.use(express.json());
+
+// Middleware to enable CORS
+// app.use(cors()); try this if the below code doesn't work
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Allow requests from this client URL
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 
 // Express.js route handler for the root of the server
 // Takes URL path and a callback function as arguments
