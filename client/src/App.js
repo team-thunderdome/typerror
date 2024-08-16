@@ -1,13 +1,20 @@
-import Title from './Title.js'
-import StartBox from './startButton.js'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./landingPage.js"
+import GamingPage from "./gamingPage.js"
+
+
+
+// we need to route in other pages
 
 function App() {
   return (
-    <div style={{
-	/* backgroundColor: '#F7E7CB' */
-	}}>
-	<Title />
-	<StartBox />
+	<div>
+	<Router>
+	<Routes>
+	<Route path='/' element={<LandingPage />} />
+	<Route path='/gamingPage' element={<GamingPage />} />
+	</Routes>
+	</Router>
     </div>
   )
 }
