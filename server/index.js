@@ -15,7 +15,7 @@ app.get("/", (request, response) => {
   return response.status(234).send("typeerror");
 });
 
-// Route to save a new player score
+// Route to POST a new player score
 app.post("/scores", async (request, response) => {
   try {
     if (!request.body.name || !request.body.score) {
@@ -31,6 +31,19 @@ app.post("/scores", async (request, response) => {
     // Send the score object to the database
     const score = await Score.create(newScore);
     return response.status(201).send(score);
+  } catch (error) {
+    // Respond with an error message
+    console.log(error.message);
+    return response.status(500).send({ message: error.message });
+  }
+});
+
+// Route to GET all scores from database
+app.get("/scores", async (request, response) => {
+  try {
+    // Get all scores from the database
+    const scores = await Score.find({});
+    return response.status(200).json(scores);
   } catch (error) {
     // Respond with an error message
     console.log(error.message);
