@@ -1,8 +1,11 @@
-const StartBox = () => {
+import './startButton.css'
+
+const StartBox = ({onClick}) => {
 	return (
-	<div class="startBox">
-	<p>start...</p> 
-	</div>
+	<div>
+	<button className="startBox" onClick={onClick}>
+	   &gt; start...
+	</button></div>
 	)
 }
 
