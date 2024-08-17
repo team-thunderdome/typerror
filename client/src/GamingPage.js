@@ -21,24 +21,28 @@ const GamingPage = () => {
     return (<div>Loading...</div>)
   }
 
-  var current_prompt_index = 1;
+  var current_prompt_index = 0;
+  var is_correct = false;
+  var timer_finished = false;
 
-  return (
-    <div id="content-container">
-      <div id="top-menu-bar">
-        <Header />
+  while (!timer_finished) {
+    return (
+      <div id="content-container">
+        <div id="top-menu-bar">
+          <Header />
+        </div>
+        
+        <div id="code-box">
+          <Codebox text={data.level_1[current_prompt_index].prompt}/>
+        </div>
+        
+        <div id="input-text-box">
+          <TextBox />
+        </div>
+        
       </div>
-      
-      <div id="code-box">
-        <Codebox text={data.level_1[current_prompt_index].prompt}/>
-      </div>
-      
-      <div id="input-text-box">
-        <TextBox />
-      </div>
-      
-    </div>
-  );
+    );
+  }
 };
 
 export default GamingPage;
