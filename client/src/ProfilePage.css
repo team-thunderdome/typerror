@@ -1,0 +1,14 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.text p {
+    font-size: 1.1rem;
+}

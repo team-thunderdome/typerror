@@ -1,12 +1,12 @@
 import Header from "./Header.js";
-//import SettingsTitle from "./SettingsTitle.js";
-//import "./settingsPage.css"
+import SettingsTitle from "./SettingsTitle.js";
+import "./SettingsPage.css"
 
 const SettingsPage = () => {
     return(
         <div>
             <Header />
-            <p>Settings</p>
+            <SettingsTitle />
         </div>
     );
 };

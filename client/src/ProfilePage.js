@@ -1,12 +1,12 @@
 import Header from "./Header.js";
-//import ProfileTitle from "./ProfileTitle.js";
-//import "./profilePage.css"
+import ProfileTitle from "./ProfileTitle.js";
+import "./ProfilePage.css"
 
 const ProfilePage = () => {
     return(
         <div>
             <Header />
-            <p>Profile</p>
+            <ProfileTitle />
         </div>
     );
 };
