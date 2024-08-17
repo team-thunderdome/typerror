@@ -3,7 +3,7 @@ import "./Leaderboard.css";
 
 const LeaderBoard = () => {
   return (
-    <div>
+    <div className="ldrContainer">
       <Header />
       <table className="ldrTable"></table>
       <tr>

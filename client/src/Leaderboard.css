@@ -1,18 +1,19 @@
 .ldrTable {
-  width: 500px;
-  margin: 20px 0;
+  width: 80%; /* Adjust the width to take up more space */
+  margin: 20px auto; /* Center the table horizontally */
   font-size: 18px;
   text-align: center;
+  border-collapse: collapse; /* Ensure borders are collapsed */
 }
 
 .ldrTable th,
 .ldrTable td {
   border: 1px solid #ddd;
-  padding: 12px 15px;
+  padding: 16px 20px; /* Increase padding for more spacing */
 }
 
 .ldrTable th {
-  background-color: #f2f2f2;
+  background-color: q#f2f2f2;
   color: #333;
 }
 
@@ -22,4 +23,9 @@
 
 .ldrTable tr:hover {
   background-color: #f1f1f1;
+}
+
+/* Container for the table */
+.ldrContainer {
+  width: 500px;
 }
