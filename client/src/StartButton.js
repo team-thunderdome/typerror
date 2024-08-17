@@ -1,11 +1,10 @@
 import "./startButton.css";
 import { useNavigate } from "react-router-dom";
 
-// THIS SHOULD PROBABLY DO SOMETHING > ROUTE GAMINGPAGE
 const StartButton = ({ onClick }) => {
   let navigate = useNavigate();
   const ChangePath = () => {
-    let path = "/gamingPage";
+    let path = "/game";
     navigate(path);
   };
   return (

@@ -1,0 +1,15 @@
+.icon-text {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.image {
+    padding-right: 0.4em;
+}
+
+.title p {
+    font-size: 1.8rem;
+}
