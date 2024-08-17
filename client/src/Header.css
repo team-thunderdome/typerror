@@ -2,16 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   border-bottom: 1px solid #e9ecef;
+  padding-top: 10px;
 }
 
 .logos {
   display: flex;
-  gap: 1rmem;
-  margin-left: auto;
+  margin-right: 30px;
+  width: 50%;
+  justify-content: right;
+}
+
+.main-logo {
+  display: flex;
+  margin-left: 10px;
+  width: 50%;
+  justify-content: left;
 }
 
 .logos img {
@@ -19,10 +27,7 @@
   height: auto;
 }
 
-.main-logo {
-  display: flex;
-  margin-right: auto;
-}
+
 
 .main-logo img {
   display: flex;
