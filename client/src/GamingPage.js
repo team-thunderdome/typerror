@@ -21,7 +21,7 @@ const GamingPage = () => {
     return (<div>Loading...</div>)
   }
 
-  
+  var current_prompt_index = 1;
 
   return (
     <div id="content-container">
@@ -30,7 +30,7 @@ const GamingPage = () => {
       </div>
       
       <div id="code-box">
-        <Codebox text={data.level_1[0].prompt}/>
+        <Codebox text={data.level_1[current_prompt_index].prompt}/>
       </div>
       
       <div id="input-text-box">
