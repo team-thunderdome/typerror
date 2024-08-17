@@ -6,13 +6,7 @@ import './ResultsPage.css'
 
 const ResultsPage = () => {
     return (
-      <div
-        style={
-          {
-            /* backgroundColor: '#F7E7CB' */
-          }
-        }
-      >
+      <div>
         <Header />
         <ResultsTitle />
         <StatSection />

@@ -13,6 +13,7 @@
   margin-right: 30px;
   width: 50%;
   justify-content: right;
+  gap: 10px
 }
 
 .main-logo {
@@ -23,11 +24,9 @@
 }
 
 .logos img {
-  width: 32px;
+  width: 48px;
   height: auto;
 }
-
-
 
 .main-logo img {
   display: flex;
