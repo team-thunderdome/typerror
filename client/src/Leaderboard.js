@@ -7,7 +7,7 @@ const LeaderBoard = () => {
 
   useEffect(() => {
     // Fetch data from the JSON file
-    fetch("/leaderboardScores.json")
+    fetch("http://localhost:3001/leaderboardScores")
       .then((response) => response.json())
       .then((data) => setScores(data))
       .catch((error) => console.error("Error fetching the scores:", error));
