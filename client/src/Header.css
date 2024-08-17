@@ -8,7 +8,7 @@
   padding-top: 10px;
 }
 
-.logos {
+.nav {
   display: flex;
   margin-right: 30px;
   width: 50%;
@@ -23,7 +23,7 @@
   justify-content: left;
 }
 
-.logos img {
+.nav img {
   width: 48px;
   height: auto;
 }

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const StartButton = ({ onClick }) => {
   let navigate = useNavigate();
   const ChangePath = () => {
-    let path = "/gamingPage";
+    let path = "/game";
     navigate(path);
   };
   return (

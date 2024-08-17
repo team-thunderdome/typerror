@@ -10,17 +10,19 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className="header">
+      <nav className="main-logo">
+          <Link to="/">
+            <img src={logo} alt="Home" className="nav-image"/>
+          </Link>
+      </nav>
       <nav className="nav">
-        <Link to="/">
-          <img src={logo} alt="Home" />
-        </Link>
         <Link to="/profile">
           <img src={profile} alt="Profile" className="nav-image" />
         </Link>
-        <Link to="/about">
-          <img src={about} alt="About" className="nav-image" />
+        <Link to="/info">
+          <img src={about} alt="Info" className="nav-image" />
         </Link>
-        <Link to="/leader">
+        <Link to="/leaderboard">
           <img src={leader} alt="Leader" className="nav-image" />
         </Link>
         <Link to="/settings">
