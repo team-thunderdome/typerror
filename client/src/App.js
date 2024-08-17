@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./LandingPage.js";
-import GamingPage from "./GamingPage.js";
+import LandingPage from "./Pages/LandingPage.js";
+import GamingPage from "./Pages/GamingPage.js";
 
 // we need to route in other pages
 

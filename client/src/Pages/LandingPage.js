@@ -1,6 +1,6 @@
-import StartButton from "./StartButton.js";
-import Title from "./Title.js";
-import Header from "./Header.js";
+import StartButton from "../components/StartButton.js";
+import Title from "../components/Title.js";
+import Header from "../components/Header.js";
 
 const LandingPage = () => {
   return (

@@ -1,8 +1,8 @@
 import "./Header.css";
-import profile from "./assets/profile.svg";
-import about from "./assets/about.svg";
-import leader from "./assets/leader.svg";
-import settings from "./assets/settings.svg";
+import profile from "./../assets/profile.svg";
+import about from "./../assets/about.svg";
+import leader from "./../assets/leader.svg";
+import settings from "./../assets/settings.svg";
 
 const Header = () => {
   return (

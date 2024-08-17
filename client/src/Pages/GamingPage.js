@@ -1,5 +1,5 @@
-import Title from "./Title.js";
-import TextBox from "./TextBox.js";
+import Title from "../components/Title.js";
+import TextBox from "../components/TextBox.js";
 
 const GamingPage = () => {
   return (
