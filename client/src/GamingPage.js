@@ -2,6 +2,7 @@ import TextBox from "./TextBox.js";
 import Header from "./Header.js";
 import Codebox from "./Codebox.js";
 import "./GamingPage.css"
+import TyperrorGame from "./TyperrorGame.js";
 
 const GamingPage = () => {
   return (
@@ -9,13 +10,9 @@ const GamingPage = () => {
       <div id="top-menu-bar">
         <Header />
       </div>
-      
-      <div id="code-box">
-        <Codebox />
-      </div>
-      
-      <div id="input-text-box">
-        <TextBox />
+
+      <div className="Game">
+        <TyperrorGame />
       </div>
       
     </div>
@@ -23,3 +20,13 @@ const GamingPage = () => {
 };
 
 export default GamingPage;
+
+/*
+<div id="code-box">
+        <Codebox />
+      </div>
+      
+      <div id="input-text-box">
+        <TextBox />
+      </div>
+*/ 
