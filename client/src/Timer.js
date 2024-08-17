@@ -7,7 +7,7 @@ const Timer = (props) => {
     let failure = props.failure
     let score = props.score
 
-    const [counter, setCounter] = React.useState(10);
+    const [counter, setCounter] = React.useState(35);
     let navigate = useNavigate();
     const ChangePath = () => {
     let path = "/results";
