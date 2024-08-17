@@ -10,6 +10,12 @@ import "./GamingPage.css"
 const GamingPage = () => {
   const [data, setData] = useState(null);
 
+  const [inputValue, setInputValue] = useState(''); 
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value); 
+  };
+
   useEffect(() => {
     fetch('/../CodePrompt.json')
       .then(response => response.json())
@@ -25,7 +31,7 @@ const GamingPage = () => {
   var is_correct = false;
   var timer_finished = false;
 
-  while (!timer_finished) {
+  while (true) {
     return (
       <div id="content-container">
         <div id="top-menu-bar">
@@ -35,14 +41,14 @@ const GamingPage = () => {
         <div id="code-box">
           <Codebox text={data.level_1[current_prompt_index].prompt}/>
         </div>
-        
         <div id="input-text-box">
-          <TextBox />
+          <TextBox value={inputValue} onChange={handleInputChange} />
         </div>
-        
       </div>
     );
   }
+
+  /* route here to go to next page */
 };
 
 export default GamingPage;
