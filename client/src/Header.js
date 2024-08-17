@@ -7,10 +7,13 @@ import settings from "./assets/settings.svg";
 const Header = () => {
   return (
     <div class="header">
-      <img src={profile} alt="logo" />
-      <img src={about} alt="logo" />
-      <img src={leader} alt="logo" />
-      <img src={settings} alt="logo" />
+      <div class="logos">
+        <img src={profile} alt="logo" />
+        <img src={about} alt="logo" />
+        <img src={leader} alt="logo" />
+        <img src={settings} alt="logo" />
+      </div>
+      <div class="headerTitle">typerror</div>
     </div>
   );
 };
