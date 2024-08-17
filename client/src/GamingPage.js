@@ -7,7 +7,7 @@ import Header from "./Header.js";
 import Codebox from "./Codebox.js";
 import "./GamingPage.css"
 
-const max_prompt_index = 1; /* from 0 indexing i.e., if there are 2 prompts then max_prompt_index is 1 */
+const max_prompt_index = 5; /* from 0 indexing i.e., if there are 2 prompts then max_prompt_index is 1 */
 
 const GamingPage = () => {
   const [data, setData] = useState(null);
@@ -16,7 +16,7 @@ const GamingPage = () => {
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value); 
-    if (data && inputValue === data.level_1[currentPromptIndex].answer) {
+    if (data && inputValue === data.items[currentPromptIndex].answer) {
       if (currentPromptIndex < max_prompt_index) {
         setPromptIndex(prevIndex => prevIndex + 1); 
       }
@@ -41,7 +41,7 @@ const GamingPage = () => {
         <Header />
       </div>
       <div id="code-box">
-        <Codebox text={data.level_1[currentPromptIndex].prompt}/>
+        <Codebox text={data.items[currentPromptIndex].prompt}/>
       </div>
       <div id="input-text-box">
         <TextBox value={inputValue} onChange={handleInputChange} />

@@ -1,7 +1,7 @@
 {
     "title": "TypeError Code Prompt",
-    "description": "Keeps ",
-    "level_1": [
+    "description": "",
+    "items": [
       {
         "prompt": "prompt 1",
         "answer": "answer 1"
@@ -13,16 +13,18 @@
       {
         "prompt": "prompt 3",
         "answer": "answer 3"
+      },
+      {
+        "prompt": "prompt 4",
+        "answer": "answer 4"
+      },
+      {
+        "prompt": "prompt 5",
+        "answer": "answer 5"
+      },
+      {
+        "prompt": "prompt 6",
+        "answer": "answer 6"
       }
-    ],
-    "level_2": [
-        {
-          "prompt": "prompt level 2.1",
-          "answer": "answer level 2.1"
-        },
-        {
-          "prompt": "prompt level 2.2",
-          "answer": "answer level 2.2"
-        }
-      ]
+    ]
   }
