@@ -1,14 +1,32 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
   border-bottom: 1px solid #e9ecef;
 }
 
 .logos {
-  text-align: right;
+  display: flex;
+  gap: 1rmem;
+  margin-left: auto;
 }
 
-.headerTitle {
-  text-align: left;
+.logos img {
+  width: 32px;
+  height: auto;
+}
+
+.main-logo {
+  display: flex;
+  margin-right: auto;
+}
+
+.main-logo img {
+  display: flex;
+  justify-content: left;
+  width: 150px;
+  height: auto;
 }
