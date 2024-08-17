@@ -15,7 +15,7 @@ const InfoPage = () => {
 
                 <p>Sometimes what you see might be wrong. It's up to you to spot any errors in the line of code and fix them.</p>
 
-                <p>Compare your times to other people on the leaderboards. Customise the website to your liking, in both appearance and functionality. Keep track of your stats and history by making a profile.</p>
+                <p>Compare your times to other people on the leaderboards. Customise the website appearance and typing functionality. Keep track of your stats and history by making a profile.</p>
             </div>
 
         </div>
