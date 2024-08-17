@@ -1,4 +1,4 @@
-import "./landingPage.css";
+import "./LandingPage.css";
 import StartButton from "./StartButton.js";
 import Title from "./Tagline.js";
 import Header from "./Header.js";
