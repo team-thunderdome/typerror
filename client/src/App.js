@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./LandingPage.js";
 import GamingPage from "./GamingPage.js";
-
-// we need to route in other pages
+import ResultsPage from "./ResultsPage.js";
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/gamingpage" element={<GamingPage />} />
+          <Route path="/results" element={<ResultsPage />} />
         </Routes>
       </Router>
     </div>
