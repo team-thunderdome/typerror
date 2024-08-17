@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 
 import Title from "./InfoTitle.js";
 import logo from "./assets/logo.svg";
@@ -15,15 +16,15 @@ const GamingPage = () => {
   const [data, setData] = useState(null);
   const [inputValue, setInputValue] = useState(''); 
   const [currentPromptIndex, setPromptIndex] = useState(0);
-  let score = 0;
-  let failed = 0;
+  const [score, setScore] = useState(0);
+  const [failure, setFailure] = useState(0);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value); 
     if (data && inputValue === data.items[currentPromptIndex].answer) {
       setPromptIndex(Math.floor(Math.random() * data.items.length)); 
       setInputValue('');
-      score += 1;
+      setScore(score + 1);
     }
   };
 
@@ -46,9 +47,8 @@ const GamingPage = () => {
   }
 
   function handleClick() {
-    failed += 1;
+    setFailure(failure + 1);
     setPromptIndex(Math.floor(Math.random() * data.items.length));
-    console.log(failed)
   }
 
   // Call same thing above if clicked
@@ -75,7 +75,7 @@ const GamingPage = () => {
         <SkipButton />
       </div>
       <div id="timer-box">
-        <Timer />
+        <Timer failure={failure} score={score}/>
       </div>
     </div>
   );

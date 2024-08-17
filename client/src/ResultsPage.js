@@ -3,11 +3,12 @@ import Header from './Header.js'
 import LeaderboardButton from './LeaderboardButton.js';
 import StatSection from './StatSection.js'
 import './ResultsPage.css'
-
 import "./leaderboardButton.css";
 import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useLocation } from "react-router-dom";
 
-/* const SubmitScore = () => {
+const SubmitScore = () => {
     const [score, setScore] = useState("")
     const [name, setName] = useState("")
 
@@ -30,8 +31,6 @@ import { useNavigate } from "react-router-dom";
     let path = '/leaderboard'
     navigate(path);
 }
-
-*/
 
 /*
 const NameForm = () => {
@@ -66,11 +65,15 @@ const ScoreButton = ({onClick}) => {
 }
 
 const ResultsPage = () => {
+    const location = useLocation()
+    const { state } = location;
+    const failure = state?.failure;
+    const score = state?.score;
     return (
       <div>
         <Header />
         <ResultsTitle />
-        <StatSection />
+        <StatSection failure={failure} score={score}/>
         <div class="leader-button">
             <LeaderboardButton /></div>
         </div>

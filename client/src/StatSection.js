@@ -9,21 +9,13 @@ const StatDisplay = (props) => {
     )
 }
 
-const StatSection = () => {
-    const stat1 = "WPM"
-    const stat2 = "errors"
-    const stat3 = "test"
-    const stat4 = "test2"
-    const statWPM = 383
-    const statErrors = 12
-    const statGeneric = 9495
-    const statGeneric2 = 839
+const StatSection = (props) => {
+    const stat1 = "successes"
+    const stat2 = "failures"
     return (
       <div class="stat-section">
-        <StatDisplay name={stat1} stat={statWPM} />
-        <StatDisplay name={stat2} stat={statErrors} />
-        <StatDisplay name={stat3} stat={statGeneric} />
-        <StatDisplay name={stat4} stat={statGeneric2} />
+        <StatDisplay name={stat1} stat={props.score} />
+        <StatDisplay name={stat2} stat={props.failure} />
       </div>
     );
   };
