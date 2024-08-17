@@ -6,8 +6,7 @@ import settings from "./assets/settings.svg";
 
 const Header = () => {
   return (
-    <div>
-      <div class="header"></div>
+    <div class="header">
       <img src={profile} alt="logo" />
       <img src={about} alt="logo" />
       <img src={leader} alt="logo" />
