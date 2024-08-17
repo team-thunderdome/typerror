@@ -1,0 +1,24 @@
+{
+    "title": "TypeError Code Prompt",
+    "description": "Keeps ",
+    "level_1": [
+      {
+        "prompt": "prompt level 1.1",
+        "answer": "answer level 1.1"
+      },
+      {
+        "prompt": "prompt level 1.1",
+        "answer": "answer level 1.1"
+      }
+    ],
+    "level_2": [
+        {
+          "prompt": "prompt level 2.1",
+          "answer": "answer level 2.1"
+        },
+        {
+          "prompt": "prompt level 2.2",
+          "answer": "answer level 2.2"
+        }
+      ]
+  }
