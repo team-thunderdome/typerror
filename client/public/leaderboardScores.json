@@ -1,4 +1,6 @@
-{
-  "username": "JohnDoe",
-  "score": 100
-}
+[
+  {
+    "username": "JohnDoe",
+    "score": 100
+  }
+]

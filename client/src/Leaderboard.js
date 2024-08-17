@@ -1,31 +1,39 @@
-import Header from "./Header.js";
+import React, { useEffect, useState } from "react";
 import "./Leaderboard.css";
+import Header from "./Header.js";
 
 const LeaderBoard = () => {
+  const [scores, setScores] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the JSON file
+    fetch("/leaderboardScores.json")
+      .then((response) => response.json())
+      .then((data) => setScores(data))
+      .catch((error) => console.error("Error fetching the scores:", error));
+  }, []);
+
   return (
     <div className="ldrContainer">
       <Header />
-      <table className="ldrTable"></table>
-      <tr>
-        <th>Rank</th>
-        <th>Username</th>
-        <th>WPM</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>John</td>
-        <td>100</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Bob</td>
-        <td>90</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Joe</td>
-        <td>80</td>
-      </tr>
+      <table className="ldrTable">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {scores.map((score, index) => (
+            <tr key={index}>
+              <td>{index + 1}</td>
+              <td>{score.username}</td>
+              <td>{score.score}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
