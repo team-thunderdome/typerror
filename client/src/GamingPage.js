@@ -12,12 +12,12 @@ const max_prompt_index = 2; /* from 0 indexing i.e., if there are 2 prompts then
 const GamingPage = () => {
   const [data, setData] = useState(null);
   const [inputValue, setInputValue] = useState(''); 
-  const [current_prompt_index, set_prompt_index] = useState(0);
+  const [currentPromptIndex, setPromptIndex] = useState(0);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value); 
-    if (data && inputValue === data.level_1[current_prompt_index].answer) {
-      set_prompt_index(prevIndex => prevIndex + 1); 
+    if (data && inputValue === data.level_1[currentPromptIndex].answer) {
+      setPromptIndex(prevIndex => prevIndex + 1); 
       setInputValue(''); 
     }
     // if (data && inputValue === data.level_1[current_prompt_index].answer) {
@@ -43,12 +43,12 @@ const GamingPage = () => {
 
   return (
     <div id="content-container">
-      <div>Current prompt = {current_prompt_index}</div>
+      <div>Current prompt = {currentPromptIndex}</div>
       <div id="top-menu-bar">
         <Header />
       </div>
       <div id="code-box">
-        <Codebox text={data.level_1[current_prompt_index].prompt}/>
+        <Codebox text={data.level_1[currentPromptIndex].prompt}/>
       </div>
       <div id="input-text-box">
         <TextBox value={inputValue} onChange={handleInputChange} />
