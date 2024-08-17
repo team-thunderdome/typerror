@@ -1,0 +1,10 @@
+.icon-text {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  padding-right: 0.45em;
+}

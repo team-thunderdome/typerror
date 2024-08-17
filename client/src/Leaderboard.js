@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Leaderboard.css";
 import Header from "./Header.js";
+import LeaderboardTitle from "./LeaderboardTitle.js";
 
 const LeaderBoard = () => {
   const [scores, setScores] = useState([]);
@@ -18,6 +19,7 @@ const LeaderBoard = () => {
       <div className="header-container">
         <Header />
       </div>
+      <LeaderboardTitle />
       <table className="ldrTable">
         <thead>
           <tr>
