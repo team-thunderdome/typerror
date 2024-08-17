@@ -1,0 +1,30 @@
+{
+    "title": "TypeError Code Prompt",
+    "description": "",
+    "items": [
+      {
+        "prompt": "prompt 1",
+        "answer": "answer 1"
+      },
+      {
+        "prompt": "prompt 2",
+        "answer": "answer 2"
+      },
+      {
+        "prompt": "prompt 3",
+        "answer": "answer 3"
+      },
+      {
+        "prompt": "prompt 4",
+        "answer": "answer 4"
+      },
+      {
+        "prompt": "prompt 5",
+        "answer": "answer 5"
+      },
+      {
+        "prompt": "prompt 6",
+        "answer": "answer 6"
+      }
+    ]
+  }
