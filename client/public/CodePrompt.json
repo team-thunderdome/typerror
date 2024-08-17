@@ -3,12 +3,12 @@
     "description": "Keeps ",
     "level_1": [
       {
-        "prompt": "prompt level 1.1",
-        "answer": "answer level 1.1"
+        "prompt": "prompt 1",
+        "answer": "answer 1"
       },
       {
-        "prompt": "prompt level 1.2",
-        "answer": "answer level 1.2"
+        "prompt": "prompt 2",
+        "answer": "answer 2"
       }
     ],
     "level_2": [
