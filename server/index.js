@@ -71,6 +71,7 @@ mongoose
       console.log(`Server is running on http://localhost:${PORT}`);
     });
   })
+  // Catch any errors and log them to the console
   .catch((error) => {
     console.error(error);
   });
