@@ -1,6 +1,6 @@
-.textInput {
+/* .textInput {
   color: #000;
-  background-color: #f3cda1;
+  background-color: #f3cda1; 
   display: inline-block;
   display: flex;
   justify-content: center;
@@ -9,8 +9,21 @@
   border-radius: 10px;
   text-align: left;
   padding-right: 20em;
-  width: 27em;
+  max-width: 27em;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 30px;
+} */
+
+.textInput {
+  color: #000;
+  background-color: #f3cda1; 
+  display: inline-block;
+  display: flex;
+  width: 50vw;
+  max-width: 50vw;
+  min-width: 200px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .startButton:hover {
