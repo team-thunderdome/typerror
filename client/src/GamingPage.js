@@ -1,4 +1,3 @@
-import logo from "./assets/logo.svg";
 import TextBox from "./TextBox.js";
 import Header from "./Header.js";
 import Codebox from "./Codebox.js";
