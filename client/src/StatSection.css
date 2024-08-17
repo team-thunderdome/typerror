@@ -1,0 +1,13 @@
+.statDisplay {
+    display: flex;
+}
+
+.stat {
+    color: #EA8F27;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stat-section {
+    display: flex;
+}
