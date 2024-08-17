@@ -15,7 +15,9 @@ const LeaderBoard = () => {
 
   return (
     <div className="ldrContainer">
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <table className="ldrTable">
         <thead>
           <tr>

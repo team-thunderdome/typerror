@@ -1,5 +1,5 @@
 .ldrTable {
-  width: 80%; /* Adjust the width to take up more space */
+  width: 50%; /* Adjust the width to take up more space */
   margin: 20px auto; /* Center the table horizontally */
   font-size: 18px;
   text-align: center;
@@ -23,9 +23,4 @@
 
 .ldrTable tr:hover {
   background-color: #f1f1f1;
-}
-
-/* Container for the table */
-.ldrContainer {
-  width: 500px;
 }
