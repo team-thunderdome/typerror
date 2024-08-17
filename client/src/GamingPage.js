@@ -8,8 +8,6 @@ import Codebox from "./Codebox.js";
 import Timer from "./Timer.js";
 import "./GamingPage.css"
 
-const max_prompt_index = 5; /* from 0 indexing i.e., if there are 2 prompts then max_prompt_index is 1 */
-
 const GamingPage = () => {
   const [data, setData] = useState(null);
   const [inputValue, setInputValue] = useState(''); 
@@ -18,9 +16,7 @@ const GamingPage = () => {
   const handleInputChange = (event) => {
     setInputValue(event.target.value); 
     if (data && inputValue === data.items[currentPromptIndex].answer) {
-      if (currentPromptIndex < max_prompt_index) {
-        setPromptIndex(prevIndex => prevIndex + 1); 
-      }
+      setPromptIndex(Math.floor(Math.random() * data.items.length)); 
       setInputValue(''); 
     }
   };
@@ -31,6 +27,13 @@ const GamingPage = () => {
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
+
+  // Set a random index once data is loaded
+  useEffect(() => {
+    if (data && data.items.length > 0) {
+      setPromptIndex(Math.floor(Math.random() * data.items.length));
+    }
+  }, [data]);
 
   if (!data) {
     return (<div>Loading...</div>)

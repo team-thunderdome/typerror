@@ -1,30 +1,252 @@
 {
-    "title": "TypeError Code Prompt",
-    "description": "",
-    "items": [
-      {
-        "prompt": "prompt 1",
-        "answer": "answer 1"
-      },
-      {
-        "prompt": "prompt 2",
-        "answer": "answer 2"
-      },
-      {
-        "prompt": "prompt 3",
-        "answer": "answer 3"
-      },
-      {
-        "prompt": "prompt 4",
-        "answer": "answer 4"
-      },
-      {
-        "prompt": "prompt 5",
-        "answer": "answer 5"
-      },
-      {
-        "prompt": "prompt 6",
-        "answer": "answer 6"
-      }
-    ]
-  }
+  "title": "Type Error Prompt",
+  "description": "Fix these short Python syntax errors.",
+  "items": [
+    {
+      "prompt": "print('Hello World'",
+      "answer": "print('Hello World')"
+    },
+    {
+      "prompt": "if x > 5 print(x)",
+      "answer": "if x > 5: print(x)"
+    },
+    {
+      "prompt": "for i in range(3 print(i)",
+      "answer": "for i in range(3): print(i)"
+    },
+    {
+      "prompt": "def add(a, b return a + b",
+      "answer": "def add(a, b): return a + b"
+    },
+    {
+      "prompt": "while x < 5 print(x)",
+      "answer": "while x < 5: print(x)"
+    },
+    {
+      "prompt": "list = [1, 2, 3 append(4)",
+      "answer": "list = [1, 2, 3]; list.append(4)"
+    },
+    {
+      "prompt": "x = 'Hello' print(x)",
+      "answer": "x = 'Hello'; print(x)"
+    },
+    {
+      "prompt": "if True: print('yes')",
+      "answer": "if True: print('yes')"
+    },
+    {
+      "prompt": "range(10 print(i))",
+      "answer": "for i in range(10): print(i)"
+    },
+    {
+      "prompt": "x = 2 ** 3",
+      "answer": "x = 2 ** 3"
+    },
+    {
+      "prompt": "print(3 * 4",
+      "answer": "print(3 * 4)"
+    },
+    {
+      "prompt": "y = 7 // 2",
+      "answer": "y = 7 // 2"
+    },
+    {
+      "prompt": "def multiply(a, b: return a * b",
+      "answer": "def multiply(a, b): return a * b"
+    },
+    {
+      "prompt": "if x == 10 print(x)",
+      "answer": "if x == 10: print(x)"
+    },
+    {
+      "prompt": "while x < 10 print(x); x += 1",
+      "answer": "while x < 10: print(x); x += 1"
+    },
+    {
+      "prompt": "for i in range(4): print(i)",
+      "answer": "for i in range(4): print(i)"
+    },
+    {
+      "prompt": "list = [1, 2, 3 4]",
+      "answer": "list = [1, 2, 3, 4]"
+    },
+    {
+      "prompt": "print('Done')",
+      "answer": "print('Done')"
+    },
+    {
+      "prompt": "len('hello')",
+      "answer": "len('hello')"
+    },
+    {
+      "prompt": "x = [1, 2, 3] x.append(4)",
+      "answer": "x = [1, 2, 3]; x.append(4)"
+    },
+    {
+      "prompt": "if a < 10: print(a)",
+      "answer": "if a < 10: print(a)"
+    },
+    {
+      "prompt": "def greet(name) return 'Hello ' + name",
+      "answer": "def greet(name): return 'Hello ' + name"
+    },
+    {
+      "prompt": "for i in range(3 print(i))",
+      "answer": "for i in range(3): print(i)"
+    },
+    {
+      "prompt": "x = '5' * 3",
+      "answer": "x = '5' * 3"
+    },
+    {
+      "prompt": "while True break",
+      "answer": "while True: break"
+    },
+    {
+      "prompt": "if x == 1 print('One')",
+      "answer": "if x == 1: print('One')"
+    },
+    {
+      "prompt": "a = 10; b = 20; c = a + b",
+      "answer": "a = 10; b = 20; c = a + b"
+    },
+    {"prompt": "x = 5 + 3", "answer": "x = 5 + 3"},
+    {"prompt": "print('Hi')", "answer": "print('Hi')"},
+    {"prompt": "y = 4 * 5", "answer": "y = 4 * 5"},
+    {"prompt": "if x == 10 print('Ten')", "answer": "if x == 10: print('Ten')"},
+    {"prompt": "a = [1, 2, 3 append(4)", "answer": "a = [1, 2, 3]; a.append(4)"},
+    {"prompt": "while True: pass", "answer": "while True: pass"},
+    {"prompt": "for i in range(3): print(i)", "answer": "for i in range(3): print(i)"},
+    {"prompt": "def func(a return a + 1", "answer": "def func(a): return a + 1"},
+    {"prompt": "x = 'string' * 3", "answer": "x = 'string' * 3"},
+    {"prompt": "x = [1, 2, 3 4]", "answer": "x = [1, 2, 3, 4]"},
+    {"prompt": "if x = 10 print(x)", "answer": "if x == 10: print(x)"},
+    {"prompt": "print('Value: ' x)", "answer": "print('Value: ', x)"},
+    {"prompt": "for i in range(10 print(i))", "answer": "for i in range(10): print(i)"},
+    {"prompt": "a = 1 if True a = 2", "answer": "a = 1 if True else 2"},
+    {"prompt": "list = [1, 2, 3; 4]", "answer": "list = [1, 2, 3, 4]"},
+    {"prompt": "def foo(x return x", "answer": "def foo(x): return x"},
+    {"prompt": "x = [1, 2, 3, 4 append(5)", "answer": "x = [1, 2, 3, 4]; x.append(5)"},
+    {"prompt": "print('Hello' + 5)", "answer": "print('Hello' + str(5))"},
+    {"prompt": "y = 3 ** 2", "answer": "y = 3 ** 2"},
+    {"prompt": "if x < 10: print('Small')", "answer": "if x < 10: print('Small')"},
+    {"prompt": "a = 'text' * 4", "answer": "a = 'text' * 4"},
+    {"prompt": "while x < 10: x += 1", "answer": "while x < 10: x += 1"},
+    {"prompt": "print(1 / 0", "answer": "print(1 / 0)"},
+    {"prompt": "x = 'Hello' + 'World'", "answer": "x = 'Hello' + 'World'"},
+    {"prompt": "def add(a b): return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "for i in range(3 print(i)", "answer": "for i in range(3): print(i)"},
+    {"prompt": "if x == 5: print('Five')", "answer": "if x == 5: print('Five')"},
+    {"prompt": "x = [1, 2 3]", "answer": "x = [1, 2, 3]"},
+    {"prompt": "def square(x return x * x", "answer": "def square(x): return x * x"},
+    {"prompt": "while True break", "answer": "while True: break"},
+    {"prompt": "print('Value': x)", "answer": "print('Value:', x)"},
+    {"prompt": "for i in range(5 print(i))", "answer": "for i in range(5): print(i)"},
+    {"prompt": "def multiply(a b): return a * b", "answer": "def multiply(a, b): return a * b"},
+    {"prompt": "if x > 0 print('Positive')", "answer": "if x > 0: print('Positive')"},
+    {"prompt": "list = [1, 2, 3, 4 append(5)", "answer": "list = [1, 2, 3, 4]; list.append(5)"},
+    {"prompt": "def divide(a, b: return a / b", "answer": "def divide(a, b): return a / b"},
+    {"prompt": "print('Result' + 10)", "answer": "print('Result', 10)"},
+    {"prompt": "while x < 10 x += 1", "answer": "while x < 10: x += 1"},
+    {"prompt": "y = [1, 2, 3, 4; 5]", "answer": "y = [1, 2, 3, 4, 5]"},
+    {"prompt": "print(2 * 3", "answer": "print(2 * 3)"},
+    {"prompt": "a = 10 if True else 20", "answer": "a = 10 if True else 20"},
+    {"prompt": "list = [1 2 3]", "answer": "list = [1, 2, 3]"},
+    {"prompt": "def func(a b return a - b", "answer": "def func(a, b): return a - b"},
+    {"prompt": "for i in range(5 print(i)", "answer": "for i in range(5): print(i)"},
+    {"prompt": "if x == 1 print('One')", "answer": "if x == 1: print('One')"},
+    {"prompt": "y = 'text' * 2", "answer": "y = 'text' * 2"},
+    {"prompt": "print('Hello' + 5)", "answer": "print('Hello' + str(5))"},
+    {"prompt": "def func(a b return a + b", "answer": "def func(a, b): return a + b"},
+    {"prompt": "while True break", "answer": "while True: break"},
+    {"prompt": "print(2 + 2", "answer": "print(2 + 2)"},
+    {"prompt": "x = 'A' + 'B'", "answer": "x = 'A' + 'B'"},
+    {"prompt": "def add(a, b: return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "for i in range(3 print(i)", "answer": "for i in range(3): print(i)"},
+    {"prompt": "if x < 5: print('Less')", "answer": "if x < 5: print('Less')"},
+    {"prompt": "x = 'Hello' * 2", "answer": "x = 'Hello' * 2"},
+    {"prompt": "print(4 / 2", "answer": "print(4 / 2)"},
+    {"prompt": "while True: pass", "answer": "while True: pass"},
+    {"prompt": "if x == 0: print('Zero')", "answer": "if x == 0: print('Zero')"},
+    {"prompt": "def multiply(a b return a * b", "answer": "def multiply(a, b): return a * b"},
+    {"prompt": "print('Value', x", "answer": "print('Value', x)"},
+    {"prompt": "for i in range(4 print(i)", "answer": "for i in range(4): print(i)"},
+    {"prompt": "x = 'String' * 3", "answer": "x = 'String' * 3"},
+    {"prompt": "if x > 5 print('Big')", "answer": "if x > 5: print('Big')"},
+    {"prompt": "while x < 5 x += 1", "answer": "while x < 5: x += 1"},
+    {"prompt": "print('Hi' + 1)", "answer": "print('Hi', 1)"},
+    {"prompt": "def greet(name return 'Hello ' + name", "answer": "def greet(name): return 'Hello ' + name"},
+    {"prompt": "for i in range(3 print(i))", "answer": "for i in range(3): print(i)"},
+    {"prompt": "x = [1, 2 3]", "answer": "x = [1, 2, 3]"},
+    {"prompt": "print('Result' 5)", "answer": "print('Result', 5)"},
+    {"prompt": "def divide(a b return a / b", "answer": "def divide(a, b): return a / b"},
+    {"prompt": "while x < 10: pass", "answer": "while x < 10: pass"},
+    {"prompt": "x = [1 2 3]", "answer": "x = [1, 2, 3]"},
+    {"prompt": "if x == 1 print('One')", "answer": "if x == 1: print('One')"},
+    {"prompt": "y = 5 - 3", "answer": "y = 5 - 3"},
+    {"prompt": "print('Sum', 2 + 3)", "answer": "print('Sum', 2 + 3)"},
+    {"prompt": "def greet(name return 'Hi ' + name", "answer": "def greet(name): return 'Hi ' + name"},
+    {"prompt": "x = 'Test' + 1", "answer": "x = 'Test' + str(1)"},
+    {"prompt": "print(10 - 2", "answer": "print(10 - 2)"},
+    {"prompt": "def add(a, b return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "while x > 0 x -= 1", "answer": "while x > 0: x -= 1"},
+    {"prompt": "x = 4 / 2", "answer": "x = 4 / 2"},
+    {"prompt": "print('Hello', 3", "answer": "print('Hello', 3)"},
+    {"prompt": "for i in range(5 print(i)", "answer": "for i in range(5): print(i)"},
+    {"prompt": "if x == 3 print('Three')", "answer": "if x == 3: print('Three')"},
+    {"prompt": "y = 2 ** 3", "answer": "y = 2 ** 3"},
+    {"prompt": "print('Value', x", "answer": "print('Value', x)"},
+    {"prompt": "def add(a, b return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "while x < 10: x += 1", "answer": "while x < 10: x += 1"},
+    {"prompt": "x = [1, 2, 3 append(4)", "answer": "x = [1, 2, 3]; x.append(4)"},
+    {"prompt": "print('Result: ', 10)", "answer": "print('Result: ', 10)"},
+    {"prompt": "if x == 1 print('One')", "answer": "if x == 1: print('One')"},
+    {"prompt": "def greet(name return 'Hello ' + name", "answer": "def greet(name): return 'Hello ' + name"},
+    {"prompt": "for i in range(3 print(i)", "answer": "for i in range(3): print(i)"},
+    {"prompt": "x = 'Test' * 3", "answer": "x = 'Test' * 3"},
+    {"prompt": "print(5 / 2", "answer": "print(5 / 2)"},
+    {"prompt": "while x < 10 x += 1", "answer": "while x < 10: x += 1"},
+    {"prompt": "def multiply(a b return a * b", "answer": "def multiply(a, b): return a * b"},
+    {"prompt": "print('Sum', 5 + 3)", "answer": "print('Sum', 5 + 3)"},
+    {"prompt": "if x > 5 print('Big')", "answer": "if x > 5: print('Big')"},
+    {"prompt": "while x < 5: x += 1", "answer": "while x < 5: x += 1"},
+    {"prompt": "x = 5 * 2", "answer": "x = 5 * 2"},
+    {"prompt": "print('Value:', 10)", "answer": "print('Value:', 10)"},
+    {"prompt": "def subtract(a, b return a - b", "answer": "def subtract(a, b): return a - b"},
+    {"prompt": "if x == 0 print('Zero')", "answer": "if x == 0: print('Zero')"},
+    {"prompt": "for i in range(4 print(i)", "answer": "for i in range(4): print(i)"},
+    {"prompt": "x = 'A' * 5", "answer": "x = 'A' * 5"},
+    {"prompt": "while x > 0 x -= 1", "answer": "while x > 0: x -= 1"},
+    {"prompt": "print('Hello' 5)", "answer": "print('Hello', 5)"},
+    {"prompt": "def divide(a b return a / b", "answer": "def divide(a, b): return a / b"},
+    {"prompt": "if x != 10: print('Not Ten')", "answer": "if x != 10: print('Not Ten')"},
+    {"prompt": "for i in range(2 print(i))", "answer": "for i in range(2): print(i)"},
+    {"prompt": "x = 'Value' + 3", "answer": "x = 'Value' + str(3)"},
+    {"prompt": "while True break", "answer": "while True: break"},
+    {"prompt": "print(3 + 4", "answer": "print(3 + 4)"},
+    {"prompt": "def multiply(a, b return a * b", "answer": "def multiply(a, b): return a * b"},
+    {"prompt": "if x < 0: print('Negative')", "answer": "if x < 0: print('Negative')"},
+    {"prompt": "while x > 0 x -= 1", "answer": "while x > 0: x -= 1"},
+    {"prompt": "print('Hello' 5)", "answer": "print('Hello', 5)"},
+    {"prompt": "def add(a b): return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "if x == 2 print('Two')", "answer": "if x == 2: print('Two')"},
+    {"prompt": "for i in range(3 print(i)", "answer": "for i in range(3): print(i)"},
+    {"prompt": "x = 'Number' * 2", "answer": "x = 'Number' * 2"},
+    {"prompt": "while x > 5 x -= 1", "answer": "while x > 5: x -= 1"},
+    {"prompt": "print('Value:' + 10)", "answer": "print('Value:', 10)"},
+    {"prompt": "def add(a, b return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "if x > 0 print('Positive')", "answer": "if x > 0: print('Positive')"},
+    {"prompt": "for i in range(5 print(i))", "answer": "for i in range(5): print(i)"},
+    {"prompt": "x = 'Repeat' * 3", "answer": "x = 'Repeat' * 3"},
+    {"prompt": "print(10 / 5", "answer": "print(10 / 5)"},
+    {"prompt": "while x < 10: x += 2", "answer": "while x < 10: x += 2"},
+    {"prompt": "def multiply(a, b return a * b", "answer": "def multiply(a, b): return a * b"},
+    {"prompt": "if x == 1 print('One')", "answer": "if x == 1: print('One')"},
+    {"prompt": "for i in range(3 print(i)", "answer": "for i in range(3): print(i)"},
+    {"prompt": "x = 'String' * 4", "answer": "x = 'String' * 4"},
+    {"prompt": "while x > 0 x -= 1", "answer": "while x > 0: x -= 1"},
+    {"prompt": "print('Result:', 3 + 4)", "answer": "print('Result:', 3 + 4)"},
+    {"prompt": "def add(a b): return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "if x == 2 print('Two')", "answer": "if x == 2: print('Two')"}
+  ]
+}
