@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const LeaderboardButton = ({ onClick }) => {
   let navigate = useNavigate();
   const ChangePath = () => {
-    let path = "/";
+    let path = "/leaderboard";
     navigate(path);
   };
   return (

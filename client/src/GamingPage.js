@@ -5,6 +5,7 @@ import logo from "./assets/logo.svg";
 import TextBox from "./TextBox.js";
 import Header from "./Header.js";
 import Codebox from "./Codebox.js";
+import Timer from "./Timer.js";
 import "./GamingPage.css"
 
 const max_prompt_index = 5; /* from 0 indexing i.e., if there are 2 prompts then max_prompt_index is 1 */
