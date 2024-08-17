@@ -10,4 +10,15 @@
 
 .stat-section {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leader
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
