@@ -23,9 +23,9 @@ const LeaderBoard = () => {
       <table className="ldrTable">
         <thead>
           <tr>
-            <th>Rank</th>
-            <th>Username</th>
-            <th>Score</th>
+            <th>#</th>
+            <th>name</th>
+            <th>time</th>
           </tr>
         </thead>
         <tbody>
