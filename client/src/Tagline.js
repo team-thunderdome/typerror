@@ -1,11 +1,8 @@
-import "./Title.css";
+import "./Tagline.css";
 
-const Title = () => {
+const Tagline = () => {
   return (
     <div>
-      <div class="mainTitle">
-        <p>typerror</p>
-      </div>
       <div class="title">
         <p>type code, race friends, fix erro)rs</p>
       </div>
@@ -13,4 +10,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default Tagline;

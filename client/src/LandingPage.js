@@ -1,19 +1,24 @@
+import "./LandingPage.css";
 import StartButton from "./StartButton.js";
-import Title from "./Title.js";
+import Title from "./Tagline.js";
 import Header from "./Header.js";
+import logo from "./assets/logo.svg";
 
 const LandingPage = () => {
   return (
-    <div
-      style={
-        {
-          /* backgroundColor: '#F7E7CB' */
-        }
-      }
-    >
-      <Header />
-      <Title />
-      <StartButton />
+    <div className="landing-page">
+      <div className="header-container">
+        <Header />
+      </div>
+
+      <div className="title-container">
+        <img src={logo} alt="logo" className="logo" />
+        <Title />
+      </div>
+
+      <div className="start-container">
+        <StartButton />
+      </div>
     </div>
   );
 };
