@@ -7,7 +7,7 @@ const Title = () => {
         <p>typerror</p>
       </div>
       <div class="title">
-        <p>type code, race friends, fix err)rs</p>
+        <p>type code, race friends, fix erro)rs</p>
       </div>
     </div>
   );

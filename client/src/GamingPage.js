@@ -1,5 +1,7 @@
 import Title from "./Title.js";
 import TextBox from "./TextBox.js";
+import Header from "./Header.js";
+import Codebox from "./Codebox.js";
 
 const GamingPage = () => {
   return (
@@ -10,7 +12,8 @@ const GamingPage = () => {
         }
       }
     >
-      <Title />
+      <Header />
+      <Codebox />
       <TextBox />
     </div>
   );
