@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Title from "./Title.js";
+import Title from "./InfoTitle.js";
 import logo from "./assets/logo.svg";
 import TextBox from "./TextBox.js";
 import Header from "./Header.js";
@@ -21,6 +21,8 @@ const GamingPage = () => {
     return (<div>Loading...</div>)
   }
 
+  
+
   return (
     <div id="content-container">
       <div id="top-menu-bar">
@@ -28,7 +30,7 @@ const GamingPage = () => {
       </div>
       
       <div id="code-box">
-        <Codebox />
+        <Codebox text={data.level_1[0].prompt}/>
       </div>
       
       <div id="input-text-box">

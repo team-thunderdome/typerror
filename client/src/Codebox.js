@@ -1,7 +1,7 @@
 import "./Codebox.css";
 
-const Codebox = () => {
-  return <div className="codebox">Code prompts go in here</div>;
+const Codebox = ({ text }) => {
+  return <div className="codebox">{text}</div>;
 };
 
 export default Codebox;
