@@ -75,14 +75,12 @@ const ResultsPage = () => {
   }
 
   return (
-    <div>
-      <Header />
-      <ResultsTitle />
-      <StatSection failure={failure} score={score} />
-      <NameForm score={totalscore} />
-      <div class="leader-button">
-        <LeaderboardButton />
-      </div>
+    <div id="content-container">
+      <div id="header"><Header /></div>
+      <div class="main-content-item" id="results-title"><ResultsTitle /></div>
+      <div class="main-content-item" id="stats-section"><StatSection failure={failure} score={score} /></div>
+      <div class="main-content-item" id="name-form"><NameForm score={totalscore} /></div>
+      <div class="main-content-item leader-button"><LeaderboardButton /></div>
     </div>
   );
 };
