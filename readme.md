@@ -8,7 +8,7 @@ Typerror is a simple Python coding-themed type racer.
 
 Just type what you see on screen... except for when it's not correct!
 
-Sometimes what you see might be wrong. It's up to you to spot any errors in the line of code and fix them.
+Sometimes what you see might be wrong. It's up to you to spot any errors in the line of code and fix them. Gain score everytime you correctly type a line of code. If you can't figure it out, skip to get a new prompt. 
 
 # Current Features
 
