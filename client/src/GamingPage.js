@@ -22,7 +22,7 @@ const GamingPage = () => {
   const handleInputChange = (event) => {
     const value = event.target.value; 
     setInputValue(value); 
-    if (data && value === data.items[currentPromptIndex].answer) {
+    if (data && value.trim() === data.items[currentPromptIndex].answer) {
       setPromptIndex(Math.floor(Math.random() * data.items.length)); 
       setInputValue('');
       setScore(score + 1);
