@@ -27,7 +27,7 @@ const LeaderBoard = () => {
           <tr>
             <th>#</th>
             <th>name</th>
-            <th>time</th>
+            <th>score</th>
           </tr>
         </thead>
         <tbody>
