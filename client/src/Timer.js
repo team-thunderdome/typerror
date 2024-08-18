@@ -3,12 +3,15 @@ import './Timer.css'
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
-const Timer = () => {
-    const [counter, setCounter] = React.useState(30);
+const Timer = (props) => {
+    let failure = props.failure
+    let score = props.score
+
+    const [counter, setCounter] = React.useState(60);
     let navigate = useNavigate();
     const ChangePath = () => {
     let path = "/results";
-    navigate(path);
+    navigate(path, {state: {failure, score}});
     };
 
     React.useEffect(() => {

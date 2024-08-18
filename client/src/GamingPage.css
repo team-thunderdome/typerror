@@ -29,15 +29,30 @@ body {
 
 #input-text-box {
     width: 100vw;
-    height: 60vh;
+    height: 10vh;
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
 #timer-box {
+    padding-top: 8em;
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
+    width: 100%;
+}
+
+#skip-button-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.skip-button:hover {
+    cursor: pointer;
 }

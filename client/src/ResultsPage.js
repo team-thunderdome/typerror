@@ -3,41 +3,43 @@ import Header from './Header.js'
 import LeaderboardButton from './LeaderboardButton.js';
 import StatSection from './StatSection.js'
 import './ResultsPage.css'
-
 import "./leaderboardButton.css";
 import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useLocation } from "react-router-dom";
 
-/* const SubmitScore = () => {
-    const [score, setScore] = useState("")
-    const [name, setName] = useState("")
+const NameForm = (props) => {
+        let { score: totalscore } = props;
+        const [score, setScore] = useState("")
+        const [name, setName] = useState("")
+        const navigate = useNavigate()
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const userInfo = {
-            score: score,
-            username: name,
-        };
-        fetch("userinfo.json", {
-            method: "POST",
-            headers: {
-                "Content-Type": "Application/JSON",
-            },
-            body: JSON.stringify(userInfo),
-            })
-        }
+        useEffect(() => {
+            setScore(totalscore)
+          }, [totalscore]);
 
-    const navigate = useNavigate()
-    let path = '/leaderboard'
-    navigate(path);
-}
+            const handleSubmit = async (event) => {
+            event.preventDefault();
+            const userInfo = {
+              username: name,
+              score: score
+            };
+          
+            const response = await fetch("http://localhost:3001/leaderboardScores", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(userInfo),
+            });
 
-*/
-
-/*
-const NameForm = () => {
-    return (
+            let path = "/leaderboard"
+            navigate(path);
+          };
+        
+        return (
         <div class="user-info-form">
-            <form onSubmit = {SubmitScore} class="form-text">
+            <form onSubmit = {handleSubmit} class="form-text">
                 <textarea class="formtext"
                     placeholder="Enter your name here!"
                     type="text"
@@ -45,15 +47,11 @@ const NameForm = () => {
                     value={name}
                     onChange={(event) => setName(event.target.value)}>
                 </textarea>
-            <ScoreButton onClick={submit}/>
+            <ScoreButton type="submit" />
             </form>
         </div>
-    )
+        )
 }
-
-*/
-
-/*<NameForm /> */
 
 const ScoreButton = ({onClick}) => {
   return (
@@ -66,11 +64,24 @@ const ScoreButton = ({onClick}) => {
 }
 
 const ResultsPage = () => {
+    const location = useLocation()
+    const { state } = location;
+    const failure = state?.failure;
+    const score = state?.score;
+    let totalscore = 0
+    if (failure > score) {
+        totalscore = 0
+    }
+    else {
+        totalscore = (score - failure)
+    }
+
     return (
       <div>
         <Header />
         <ResultsTitle />
-        <StatSection />
+        <StatSection failure={failure} score={score}/>
+        <NameForm score={totalscore}/>
         <div class="leader-button">
             <LeaderboardButton /></div>
         </div>
