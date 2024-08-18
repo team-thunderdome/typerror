@@ -1,6 +1,6 @@
 {
   "title": "Type Error Prompt",
-  "description": "Fix these short Python syntax errors.",
+  "description": "Fix these Python syntax errors.",
   "items": [
     {"prompt": "if x > 5 print(x)", "answer": "if x > 5: print(x)"},
     {"prompt": "for i in range(3 print(i)", "answer": "for i in range(3): print(i)"},
@@ -72,6 +72,12 @@
     {"prompt": "def func(a b return a + b", "answer": "def func(a, b): return a + b"},
     {"prompt": "print(2 + 2", "answer": "print(2 + 2)"},
     {"prompt": "x = 'A' + 'B'", "answer": "x = 'A' + 'B'"},
+    {"prompt": "x = [10, 20, 30]; print(sum(x))", "answer": "x = [10, 20, 30]; print(sum(x))"},
+    {"prompt": "def greet(name): return f'Hello, {name}!'", "answer": "def greet(name): return f'Hello, {name}!''"},
+    {"prompt": "if 7 % 2 == 1: print('Odd')", "answer": "if 7 % 2 == 1: print('Odd')"},
+    {"prompt": "x = 5; y = 3; print(x * y)", "answer": "x = 5; y = 3; print(x * y)"},
+    {"prompt": "def add(a, b): return a + b", "answer": "def add(a, b): return a + b"},
+    {"prompt": "print('Hello, world!')", "answer": "print('Hello, world!')"},
     {"prompt": "def add(a, b: return a + b", "answer": "def add(a, b): return a + b"},
     {"prompt": "if x < 5: print('Less')", "answer": "if x < 5: print('Less')"},
     {"prompt": "x = 'Hello' * 2", "answer": "x = 'Hello' * 2"},
@@ -112,6 +118,9 @@
     {"prompt": "if x != 10: print('Not Ten')", "answer": "if x != 10: print('Not Ten')"},
     {"prompt": "for i in range(2 print(i))", "answer": "for i in range(2): print(i)"},
     {"prompt": "x = 'Value' + 3", "answer": "x = 'Value' + str(3)"},
+    {"prompt": "x = 10 + 5; print(x)", "answer": "x = 10 + 5; print(x)"},
+    {"prompt": "def square(n): return n * n", "answer": "def square(n): return n * n"},
+    {"prompt": "for i in range(5): print(i * i)", "answer": "for i in range(5): print(i * i)"},
     {"prompt": "print(3 + 4", "answer": "print(3 + 4)"},
     {"prompt": "def multiply(a, b return a * b", "answer": "def multiply(a, b): return a * b"},
     {"prompt": "if x < 0: print('Negative')", "answer": "if x < 0: print('Negative')"},
@@ -124,6 +133,20 @@
     {"prompt": "while x < 10: x += 2", "answer": "while x < 10: x += 2"},
     {"prompt": "x = 'String' * 4", "answer": "x = 'String' * 4"},
     {"prompt": "print('Result:', 3 + 4)", "answer": "print('Result:', 3 + 4)"},
-    {"prompt": "if x == 2 print('Two')", "answer": "if x == 2: print('Two')"}
+    {"prompt": "if x == 2 print('Two')", "answer": "if x == 2: print('Two')"},
+    {"prompt": "pr)int('Hello World')", "answer": "print('Hello World')"},
+    {"prompt": "x = 8; print(x % 3)", "answer": "x = 8; print(x % 3)"},
+    {"prompt": "def is_even(n): return n % 2 == 0", "answer": "def is_even(n): return n % 2 == 0"},
+    {"prompt": "print('Sum:', 4 + 6)", "answer": "print('Sum:', 4 + 6)"},
+    {"prompt": "print('Welcome to Python!')", "answer": "print('Welcome to Python!')"},
+    {"prompt": "x = [1, 2, 3]; x.extend([4, 5])", "answer": "x = [1, 2, 3]; x.extend([4, 5])"},
+    {"prompt": "def is_odd(n): return n % 2 != 0", "answer": "def is_odd(n): return n % 2 != 0"},
+    {"prompt": "import math; print(math.sqrt(16))", "answer": "import math; print(math.sqrt(16))"},
+    {"prompt": "a = 'Hello'; b = 'World'; print(a + ' ' + b)", "answer": "a = 'Hello'; b = 'World'; print(a + ' ' + b)"},
+    {"prompt": "x = {1, 2, 3}; x.add(4)", "answer": "x = {1, 2, 3}; x.add(4)"},
+    {"prompt": "if x % 2 == 0: print('Even')", "answer": "if x % 2 == 0: print('Even')"},
+    {"prompt": "with open('file.txt', 'r') as file: print(file.read())", "answer": "with open('file.txt', 'r') as file: print(file.read())"},
+    {"prompt": "for i in range(5): print(i * i)", "answer": "for i in range(5): print(i * i)"},
+    {"prompt": "def subtract(a b): return a - b", "answer": "def subtract(a, b): return a - b"}
   ]
 }
