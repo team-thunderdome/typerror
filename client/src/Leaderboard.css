@@ -8,17 +8,13 @@
 
 .ldrTable th,
 .ldrTable td {
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   padding: 16px 20px; /* Increase padding for more spacing */
 }
 
 .ldrTable th {
-  background-color: q#f2f2f2;
+  background-color: #f3cda1;
   color: #333;
-}
-
-.ldrTable tr:nth-child(even) {
-  background-color: #f9f9f9;
 }
 
 .ldrTable tr:hover {
