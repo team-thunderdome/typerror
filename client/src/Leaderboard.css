@@ -20,3 +20,11 @@
 .ldrTable tr:hover {
   background-color: #f1f1f1;
 }
+
+#back-button {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-bottom: 45px;
+}

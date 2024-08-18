@@ -52,7 +52,7 @@ const GamingPage = () => {
   function handleClick() {
     setFailure(failure + 1);
     setPromptIndex(Math.floor(Math.random() * data.items.length));
-    if (score > 0) {
+    if (score > -9) {
       setScore(score - 1)
     }
     setInputValue('')
