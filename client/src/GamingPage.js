@@ -17,6 +17,7 @@ const GamingPage = () => {
   const [currentPromptIndex, setPromptIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [failure, setFailure] = useState(0);
+  const [codeBoxPlaceHolder, setPlaceholderValue] = useState("Type the correct syntax here!");
 
   const handleInputChange = (event) => {
     const value = event.target.value; 
@@ -25,6 +26,7 @@ const GamingPage = () => {
       setPromptIndex(Math.floor(Math.random() * data.items.length)); 
       setInputValue('');
       setScore(score + 1);
+      setPlaceholderValue('');
     }
   };
 
@@ -67,11 +69,14 @@ const GamingPage = () => {
       <div id="top-menu-bar">
         <Header />
       </div>
+      <div id="score-counter">
+        Score: {score}
+      </div>
       <div id="code-box">
         <Codebox text={data.items[currentPromptIndex].prompt}/>
       </div>
       <div id="input-text-box">
-        <TextBox value={inputValue} onChange={handleInputChange} />
+        <TextBox value={inputValue} placeholder={codeBoxPlaceHolder} onChange={handleInputChange} />
       </div>
       <div id="skip-button-box">
         <SkipButton />

@@ -18,13 +18,23 @@ body {
 
 #code-box {
     width: 100vw;
-    height: 40vh;
-    padding-top: 100px;
+    height: 20vh;
+    padding-top: 50px;
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+#score-counter {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
 }
 
 #input-text-box {
@@ -56,3 +66,4 @@ body {
 .skip-button:hover {
     cursor: pointer;
 }
+

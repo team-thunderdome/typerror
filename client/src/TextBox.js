@@ -1,9 +1,9 @@
 import "./textBox.css";
 
-const TextBox = ({value, onChange}) => {
+const TextBox = ({value, placeholder, onChange}) => {
   return (
     <div>
-      <input className="textInput" type="text" value={value} onChange={onChange} maxlength="50" />
+      <input className="textInput" type="text" value={value} onChange={onChange} maxlength="50" placeholder={placeholder}/>
     </div>
   );
 };
