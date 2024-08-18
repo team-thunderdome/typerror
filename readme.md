@@ -1,5 +1,6 @@
-# Typerror
-2024 UQCS Hackathon, team /~thunderdome
+![logo wide](https://github.com/user-attachments/assets/85414f6e-d2f6-4d0e-abd7-cdcff8563c4b)
+
+# 2024 UQCS Hackathon, team /~thunderdome
 
 # About
 
