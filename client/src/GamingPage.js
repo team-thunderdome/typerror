@@ -11,7 +11,6 @@ import skip from "./assets/skip.svg"
 import './LeaderboardButton.js'
 import "./GamingPage.css"
 
-
 const GamingPage = () => {
   const [data, setData] = useState(null);
   const [inputValue, setInputValue] = useState(''); 
@@ -20,8 +19,9 @@ const GamingPage = () => {
   const [failure, setFailure] = useState(0);
 
   const handleInputChange = (event) => {
-    setInputValue(event.target.value); 
-    if (data && inputValue === data.items[currentPromptIndex].answer) {
+    const value = event.target.value; 
+    setInputValue(value); 
+    if (data && value === data.items[currentPromptIndex].answer) {
       setPromptIndex(Math.floor(Math.random() * data.items.length)); 
       setInputValue('');
       setScore(score + 1);
@@ -46,9 +46,11 @@ const GamingPage = () => {
     return (<div>Loading...</div>)
   }
 
+  // Skip functionality - get new prompt
   function handleClick() {
     setFailure(failure + 1);
     setPromptIndex(Math.floor(Math.random() * data.items.length));
+    setInputValue('')
   }
 
   // Call same thing above if clicked
