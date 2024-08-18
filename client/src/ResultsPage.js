@@ -2,6 +2,9 @@ import ResultsTitle from "./ResultsTitle.js";
 import Header from "./Header.js";
 import LeaderboardButton from "./LeaderboardButton.js";
 import StatSection from "./StatSection.js";
+import BackButton from "./BackButton.js"
+
+
 import "./ResultsPage.css";
 import "./leaderboardButton.css";
 import { useNavigate } from "react-router-dom";
@@ -81,6 +84,7 @@ const ResultsPage = () => {
       <div class="main-content-item" id="stats-section"><StatSection failure={failure} score={score} /></div>
       <div class="main-content-item" id="name-form"><NameForm score={totalscore} /></div>
       <div class="main-content-item leader-button"><LeaderboardButton /></div>
+      <div class="main-content-item"><BackButton /></div>
     </div>
   );
 };
